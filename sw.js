@@ -1,4 +1,4 @@
-const CACHE = 'cocoa-time-ef8ff665a2c5';
+const CACHE = 'cocoa-time-62e2a06fb8b2';
 const FILES = ["./app.js","./core.js","./icon-192.png","./icon-512.png","./icon.svg","./index.html","./manifest.webmanifest","./storage.js","./style.css","./docs/DATA_MODEL.md","./docs/HANDOFF.md","./docs/LIMITATIONS.md","./docs/RESEARCH.md","./docs/SCREEN_TIME_SETUP.md","./docs/SETUP.md","./docs/SHORTCUTS_SETUP.md","./docs/TEST_REPORT.md"];
 self.addEventListener('install', (event) =>
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES))),

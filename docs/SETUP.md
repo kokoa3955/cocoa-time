@@ -40,15 +40,11 @@ node scripts/serve.mjs
 
 ### GitHubの画面で公開する場合
 
-1. 作成済みリポジトリ https://github.com/kokoa3955/cocoa-time を開く。
-2. リポジトリの表示範囲がPublicであることを確認。
-3. mainブランチのルートにindex.htmlなどの配信用ファイルがあることを確認。
-4. 更新時だけ、distフォルダの中身を同じ構成で差し替える。個人のログやバックアップはアップロードしない。
-5. 変更時はコミットしてからPagesの更新を待つ。
-6. Settings→Pages→Build and deployment→SourceをDeploy from a branchにする。
-7. Branchをmain、フォルダを/(root)にしてSave。
-8. GitHubが表示するサイトURLをコピー。末尾のリポジトリ名を含むURLで開く。
-9. 反映後、iPhoneのSafariでそのURLを開く。
+1. 作成済みの公開リポジトリ https://github.com/kokoa3955/cocoa-time を開く。配信用ファイルはmainのルートに配置済み。
+2. Settings→Pages→Build and deployment→SourceをDeploy from a branchにする。
+3. Branchをmain、フォルダを/(root)にしてSave。
+4. 公開が完了すると https://kokoa3955.github.io/cocoa-time/ で開ける。反映を待ち、Safariで表示を確認する。設定前は404になる。
+5. 将来更新するときだけ、distフォルダの中身を同じ構成で差し替えてコミットする。個人のログやバックアップはアップロードしない。
 
 バックアップJSON、自分のCSV、Eventsフォルダ、アカウント情報はアップロードしないでください。ソース管理も行う場合はZIPのプロジェクトを別途Gitで管理でき、ビルド成果物だけを配信します。必要なら引き継ぎ時に専用のPagesワークフローを追加してください。
 
